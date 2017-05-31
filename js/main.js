@@ -1,4 +1,5 @@
-var mediator = new Mediator();
+var mediator = new Mediator(),
+	template = new Templater();
 
 document.addEventListener('DOMContentLoaded', main, false);
 
