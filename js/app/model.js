@@ -5,6 +5,10 @@ function Model () {
 		return todos;
 	};
 
+	this.addToDo = function (todo) {
+		todos.push(todo);
+	};
+
 	this.deleteToDo = function (i) {
 		todos.splice(1, i);
 	};
