@@ -1,12 +1,10 @@
 function Templater () {
-	var basicStructure,
-		newToDo;
+	this.basicFrame = '<div calss="frame">\
+				  		<label>type toDo`s<input type="text"><label/>\
+				  		<ul> {{ item }} <ul/>\
+				  	</div>';
 
-	basicStructure = '<div>\
-						<i>\
-						<lable>type a todo<input></input></lable>\
-					</div>';
-	newToDo = '<div>\
-					<p> {{ todo }}</p>\
-				</div>';
+	this.toDoItem = '<li> {{ todo }} <li/>';
+
+	return this;
 }
